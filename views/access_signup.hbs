@@ -1,0 +1,30 @@
+<div class="row w-50 p-5 mx-auto my-5 shadow">
+    <h1 class="text-center">Sign up</h1>
+    <form method="post" action="/access/signup">
+        <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input name="email" type="email" class="form-control" required>
+            <div class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input name="password" type="password" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Full name</label>
+            <input name="full_name" type="text" class="form-control" required>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" required>
+            <label class="form-check-label">Agree</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+    </form>
+
+    {{!-- Notify --}}
+    <code>{{notify}}</code>
+    {{!-- Go to Login --}}
+    <div class="row">
+        <a href="/access/login" class="text-secondary text-center text-decoration-none mt-3">Comeback to Login</a>
+    </div>
+</div>

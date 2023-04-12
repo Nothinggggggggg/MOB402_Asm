@@ -1,0 +1,31 @@
+<div class="container w-50 p-5 my-5 shadow">
+
+
+    {{!-- Title --}}
+    <h1 class="text-center">Log in</h1>
+    {{!-- Form --}}
+    <form method="post" action='/access/login'>
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email address</label>
+            <input name="email" type="email" class="form-control" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input name="password" type="password" class="form-control" placeholder=" " required>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-check-label">Remember</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+    {{!-- Notify --}}
+    <code>{{notify}}</code>
+    {{!-- Go to Sign up --}}
+    <div class="row">
+        <a href="/access/signup" class="text-secondary text-center text-decoration-none mt-3">or create new account
+            here</a>
+    </div>
+
+
+</div>

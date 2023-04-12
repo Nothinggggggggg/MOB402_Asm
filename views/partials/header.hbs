@@ -1,0 +1,55 @@
+<div class="row">
+    <nav class="navbar navbar-expand  navbar-light bg-light shadow px-4">
+        <!-- Start Nav (Logo Brand) -->
+        <a class="navbar-brand me-auto" href="#">
+            <img src="/img/logo.png" width="88px">
+        </a>
+
+        <!-- Center Nav -->
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link {{#if userActive}}active{{/if}}" href="/users/list/1">User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#if productActive}}active{{/if}}" href="/products/list/1">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Order</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Statistic</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <button class="btn dropdown-item" href="#"><i class="fa-solid fa-coins"></i>
+                            Profit</button>
+                    </li>
+                    <li>
+                        <button class="btn dropdown-item" href="#"><i class="fa-solid fa-chart-column"></i>
+                            Revenue</button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- End Nav -->
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item my-auto">
+                <a class="nav-link active" href="#"><i class="fa-regular fa-bell align-middle"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><img
+                        src="/img/hi.gif" style="width:36px;" class="rounded-circle ms-2"></a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                        <button class="btn dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            Log out</button>
+                    </li>
+                    <li>
+                        <button class="btn dropdown-item" href="#"><i class="fa-solid fa-gears"></i>
+                            Settings</button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
